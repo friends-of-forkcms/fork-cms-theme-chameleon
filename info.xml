@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>chameleon</name>
+	<version>1.0.0</version>
+	<requirements>
+		<minimum_version>3.0.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+			Chameleon is a responsive theme. The look and feel is easily editable by changing the '.background' color in screen.css.
+			Background, objects and links will all be in the same color scheme.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>Mathias Helin</name>
+			<url>http://www.helin.me</url>
+		</author>
+	</authors>
+	<metanavigation supported="false" />
+	<templates>
+		<template label="Default" path="core/layout/templates/default.tpl">
+			<positions>
+				<position name="main" />
+				<position name="right">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+			</positions>
+			<format>
+				[main, right]
+			</format>
+		</template>
+	</templates>
+</theme>
