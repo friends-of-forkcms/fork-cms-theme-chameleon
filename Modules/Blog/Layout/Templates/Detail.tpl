@@ -45,12 +45,12 @@
 
 				{* Tags *}
 				{option:item.tags}
-				    {$lblWith} {$lblThe} {$lblTags}
-				    <span itemprop="keywords">
-				    	{iteration:item.tags}
-				    		<a href="{$item.tags.full_url}" rel="tag" title="{$item.tags.name}">{$item.tags.name}</a>{option:!item.tags.last}, {/option:!item.tags.last}{option:item.tags.last}.{/option:item.tags.last}
-				    	{/iteration:item.tags}
-				    </span>
+					{$lblWith} {$lblThe} {$lblTags}
+					<span itemprop="keywords">
+						{iteration:item.tags}
+							<a href="{$item.tags.full_url}" rel="tag" title="{$item.tags.name}">{$item.tags.name}</a>{option:!item.tags.last}, {/option:!item.tags.last}{option:item.tags.last}.{/option:item.tags.last}
+						{/iteration:item.tags}
+					</span>
 				{/option:item.tags}
 				</div>
 
@@ -88,7 +88,7 @@
 							<meta itemprop="discusses" content="{$item.title}" />
 							<div class="imageHolder">
 								{option:comments.website}<a href="{$comments.website}">{/option:comments.website}
-									<img src="{$THEME_URL}/core/layout/images/default_author_avatar.gif" width="36" height="48" alt="{$comments.author}" class="replaceWithGravatar" data-gravatar-id="{$comments.gravatar_id}" />
+									<img src="{$THEME_URL}/Core/Layout/Images/default_author_avatar.gif" width="36" height="48" alt="{$comments.author}" class="replaceWithGravatar" data-gravatar-id="{$comments.gravatar_id}" />
 								{option:comments.website}</a>{/option:comments.website}
 							</div>
 							<div class="commentContent">
