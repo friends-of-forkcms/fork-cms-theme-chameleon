@@ -249,7 +249,7 @@ a:focus {
 		#logo p {
 			width: 70px;
 			height: 100px;
-			background: url(../images/logo.png) no-repeat;
+			background: url(../Images/logo.png) no-repeat;
 			background-size: 100%;
 			text-indent: -9999px;
 			padding: 0;
@@ -934,7 +934,7 @@ img.alignRight {
 	#container {
 		width: 70%;
 		margin: 0 auto;
-		background: url(../images/bg_content.png);
+		background: url(../Images/bg_content.png);
 		background-clip: content-box;
 		background-size: 135%;
 		background-position-x: 100%;
@@ -958,7 +958,7 @@ img.alignRight {
 		#logo p {
 			width: 80%;
 			height: 140px;
-			background: url(../images/logo.png) no-repeat;
+			background: url(../Images/logo.png) no-repeat;
 			background-size: 100%;
 			text-indent: -9999px;
 			padding: 0;
@@ -1096,7 +1096,7 @@ img.alignRight {
 	#container {
 		width: 70%;
 		margin: 0 auto;
-		background: url(../images/bg_content.png);
+		background: url(../Images/bg_content.png);
 		background-clip: content-box;
 		background-size: 135%;
 		background-position-x: 100%;
@@ -1132,7 +1132,7 @@ img.alignRight {
 		#logo p {
 			width: 114px;
 			height: 159px;
-			background: url(../images/logo.png) no-repeat;
+			background: url(../Images/logo.png) no-repeat;
 			background-size: 100%;
 			text-indent: -9999px;
 			padding: 0;
@@ -1268,22 +1268,22 @@ img.alignRight {
 
 @font-face {
     font-family: 'DroidSansBold';
-    src: url('../fonts/DroidSans-Bold-webfont.eot');
-    src: url('../fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    src: url('../Fonts/DroidSans-Bold-webfont.eot');
+    src: url('../Fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('../Fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('../Fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DroidSerifRegular';
-    src: url('../fonts/DroidSerif-Regular-webfont.eot');
-    src: url('../fonts/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSerif-Regular-webfont.woff') format('woff'),
-         url('../fonts/DroidSerif-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSerif-Regular-webfont.svg#DroidSerifRegular') format('svg');
+    src: url('../Fonts/DroidSerif-Regular-webfont.eot');
+    src: url('../Fonts/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/DroidSerif-Regular-webfont.woff') format('woff'),
+         url('../Fonts/DroidSerif-Regular-webfont.ttf') format('truetype'),
+         url('../Fonts/DroidSerif-Regular-webfont.svg#DroidSerifRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -51,10 +51,10 @@
 
 							{* Tags *}
 							{option:items.tags}
-							    {$lblWith} {$lblThe} {$lblTags}
-							    {iteration:items.tags}
-							    	<a href="{$items.tags.full_url}" rel="tag" title="{$items.tags.name}">{$items.tags.name}</a>{option:!items.tags.last}, {/option:!items.tags.last}{option:items.tags.last}.{/option:items.tags.last}
-							    {/iteration:items.tags}
+								{$lblWith} {$lblThe} {$lblTags}
+								{iteration:items.tags}
+									<a href="{$items.tags.full_url}" rel="tag" title="{$items.tags.name}">{$items.tags.name}</a>{option:!items.tags.last}, {/option:!items.tags.last}{option:items.tags.last}.{/option:items.tags.last}
+								{/iteration:items.tags}
 							{/option:items.tags}
 						</div>
 
@@ -66,5 +66,5 @@
 			</article>
 		{/iteration:items}
 	</div>
-	{include:core/layout/templates/pagination.tpl}
+	{include:Core/Layout/Templates/Pagination.tpl}
 {/option:items}

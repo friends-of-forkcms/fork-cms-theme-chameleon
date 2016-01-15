@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<name>chameleon</name>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<requirements>
-		<minimum_version>3.0.0</minimum_version>
+		<minimum_version>3.7.0</minimum_version>
 	</requirements>
 	<thumbnail>thumbnail.png</thumbnail>
 	<description>
@@ -20,12 +20,12 @@
 	</authors>
 	<metanavigation supported="false" />
 	<templates>
-		<template label="Default" path="core/layout/templates/default.tpl">
+		<template label="Default" path="Core/Layout/Templates/Default.tpl">
 			<positions>
 				<position name="main" />
 				<position name="right">
 					<defaults>
-						<widget module="search" action="form" />
+						<widget module="Search" action="Form" />
 					</defaults>
 				</position>
 			</positions>
