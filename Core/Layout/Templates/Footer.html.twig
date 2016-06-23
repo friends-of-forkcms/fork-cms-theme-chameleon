@@ -1,0 +1,20 @@
+<footer id="footer">
+    <div id="footerContent">
+        <div id="footerLogo">
+            <p>&copy; {{ 'now'|date('Y' ) }} {{ siteTitle }}</p>
+        </div>
+        <nav id="footerNavigation">
+            <h4>{{ 'lbl.FooterNavigation'|trans|ucfirst }}</h4>
+            <ul>
+                {% for footerLink in footerLinks %}
+                    <li{% if footerLink.selected %} class="selected"{% endif %}>
+                        <a href="{{ footerLink.url }}" title="{{ footerLink.title }}"{% if footerLink.rel %} rel="{{ footerLink.rel }}"{% endif %}>
+                            {{ footerLink.navigation_title }}
+                        </a>
+                    </li>
+                {% endfor %}
+                <li><a href="http://www.fork-cms.com" title="Fork CMS">Fork CMS</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>

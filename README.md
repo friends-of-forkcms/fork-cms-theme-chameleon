@@ -1,6 +1,8 @@
 # Theme: Chameleon
 
-
+<p align="center">
+    <img src="http://i.imgur.com/jFtqlUG.jpg">
+</p>
 
 ## Installation
 
