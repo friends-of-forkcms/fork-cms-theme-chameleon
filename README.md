@@ -18,6 +18,10 @@ It would be great if you could help us improve the theme. GitHub does a great jo
 
 More info on how to work with GitHub on [help.github.com](https://help.github.com).
 
+## Discussion
+
+- Slack: <https://fork-cms.herokuapp.com/>
+
 ## License
 
 The module is licensed under MIT. In short, this license allows you to do everything as long as the copyright statement stays present.
