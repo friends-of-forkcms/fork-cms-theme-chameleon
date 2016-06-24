@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE }}">
+<head>
+	{# Meta #}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8" />
+	<meta name="generator" content="Fork CMS" />
+	{{ meta|raw }}
+	{{ metaCustom|raw }}
+
+	<title>{{ pageTitle }}</title>
+
+	{# Favicon and Apple touch icon #}
+	<link rel="shortcut icon" href="{{ THEME_URL }}/favicon.ico" />
+	<link rel="apple-touch-icon" href="{{ THEME_URL }}/apple-touch-icon.png" />
+
+	{# Stylesheets #}
+	{% for css in cssFiles %}
+		<link rel="stylesheet" href="{{ css.file }}" />
+	{% endfor %}
+
+	{# HTML5 Javascript #}
+	<!--[if lt IE 9]> <script src="{{ THEME_URL }}/Core/Js/html5.js"></script> <![endif]-->
+
+	{# Site wide HTML #}
+	{{ siteHTMLHeader|raw }}
+</head>

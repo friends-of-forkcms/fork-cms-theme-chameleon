@@ -1,0 +1,68 @@
+{% include "Core/Layout/Templates/Head.html.twig" %}
+
+<body class="{{ LANGUAGE }} background" itemscope itemtype="http://schema.org/WebPage">
+    <div id="container">
+        <header id="header">
+            {# Logo #}
+            <div id="logo">
+                <h1><a href="/">{{ siteTitle }}</a></h1>
+            </div>
+
+            {# Navigation #}
+            <nav id="navigation">
+                <div id="currentPage"></div>
+                <div id="navigationList">
+                    {{ getnavigation('page',0,1 ) }}
+                </div>
+            </nav>
+        </header>
+
+        <div id="contentWrapper" class="clearfix">
+            <div id="main" class="content">
+                <div class="inner">
+                    {# Main position #}
+                    {% for main in positions.main %}
+                        {% if main.html %}
+                            {{ main.html|raw }}
+                        {% elseif main.include_path %}
+                            {% include main.include_path %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div id="right" class="content">
+                <div class="inner">
+                    {# Right position #}
+                    {% for right in positions.right %}
+                        {% if right.html %}
+                            {{ right.html|raw }}
+                        {% elseif right.include_path %}
+                            {% include right.include_path %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <noscript>
+                <div class="message notice">
+                    <h4>{{ 'lbl.EnableJavascript'|trans|ucfirst }}</h4>
+                    <p>{{ 'msg.EnableJavascript'|trans|ucfirst }}</p>
+                </div>
+            </noscript>
+        </div>
+    </div>
+
+    {% include "Core/Layout/Templates/Footer.html.twig" %}
+
+    {# General Javascript #}
+    {% for js in jsFiles %}
+        <script src="{{ js.file }}"></script>
+    {% endfor %}
+
+    {# Theme specific Javascript #}
+    <script src="{{ THEME_URL }}/Core/Js/chameleon.js"></script>
+    <!--[if !IE]> --><script src="{{ THEME_URL }}/Core/Js/ios-orientationchange-fix.js" type="text/javascript"></script><!-- <![endif]-->
+
+    {# Site wide HTML #}
+    {{ siteHTMLFooter|raw }}
+</body>
+</html>
