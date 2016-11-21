@@ -25,8 +25,8 @@
                             <ul>
                                 <li>
                                     {# Written on #}
-                                    <span class="day"><time itemprop="datePublished" datetime="{{ item.publish_on|date('Y-m-d\TH:i:s' ) }}">{{ item.publish_on|date('d',LANGUAGE ) }}</time></span>
-                                    {{ item.publish_on|date('m',LANGUAGE ) }}
+                                    <span class="day"><time itemprop="datePublished" datetime="{{ item.publish_on|spoondate('Y-m-d\TH:i:s' ) }}">{{ item.publish_on|spoondate('d',LANGUAGE ) }}</time></span>
+                                    {{ item.publish_on|spoondate('m',LANGUAGE ) }}
                                 </li>
                                 <li class="background commentCount">
                                     {# Comments #}

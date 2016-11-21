@@ -14,8 +14,8 @@
                     <ul>
                         <li id="date">
                             {# Written on #}
-                            <span class="day"><time itemprop="datePublished" datetime="{{ item.publish_on|date('Y-m-d\TH:i:s') }}">{{ item.publish_on|date('d',LANGUAGE) }}</time></span><br/>
-                            {{ item.publish_on|date('m',LANGUAGE ) }}
+                            <span class="day"><time itemprop="datePublished" datetime="{{ item.publish_on|spoondate('Y-m-d\TH:i:s') }}">{{ item.publish_on|spoondate('d',LANGUAGE) }}</time></span><br/>
+                            {{ item.publish_on|spoondate('m',LANGUAGE ) }}
                         </li>
                         <li class="background commentCount">
                             {# Comments #}
@@ -101,7 +101,7 @@
                                     <span itemprop="creator name">{{ comment.author }}</span>
                                     {% if comment.website %}</a>{% endif %}
                                     {{ 'lbl.Wrote'|trans }}
-                                    <time itemprop="commentTime" datetime="{{ comment.created_on|date('Y-m-d\TH:i:s') }}">{{ comment.created_on|timeago|raw }}</time>
+                                    <time itemprop="commentTime" datetime="{{ comment.created_on|spoondate('Y-m-d\TH:i:s') }}">{{ comment.created_on|timeago|raw }}</time>
                                 </p>
                                 <div class="commentText content" itemprop="commentText">
                                     {{ comment.text|cleanupplaintext|raw }}
